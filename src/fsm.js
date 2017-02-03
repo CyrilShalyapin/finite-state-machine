@@ -6,7 +6,7 @@ class FSM {
             this.nameList = [this.config.initial];
             this.prev = [null];
         } else {
-            throw new Error("config unobtainable!")
+            throw new Error("config is unobtainable!")
         }
     	
     }
@@ -28,7 +28,7 @@ class FSM {
     			return;
     		}
  		}
- 		throw new Error('improper name of state!')    	
+ 		throw new Error('improper name of the state!')    	
     }
 
     trigger(event) {
@@ -39,7 +39,7 @@ class FSM {
     			return;
     		}
     	}
-    	throw new Error('improper name of event!');
+    	throw new Error('improper name of the event!');
     }
 
     reset() {
